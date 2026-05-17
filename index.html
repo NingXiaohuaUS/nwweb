@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N&W Family Farm</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-stone-50 text-stone-800">
+
+  <section class="relative overflow-hidden bg-gradient-to-br from-green-900 via-green-800 to-amber-700 text-white">
+    <div class="absolute inset-0 opacity-10 bg-cover bg-center"
+      style="background-image:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1600&auto=format&fit=crop')">
+    </div>
+
+    <div class="relative mx-auto max-w-7xl px-6 py-24 lg:flex lg:items-center lg:justify-between lg:px-12">
+      <div class="max-w-2xl">
+        <p class="mb-4 inline-block rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm tracking-wide backdrop-blur-sm">
+          Family Owned • Locally Grown • Lake County, Illinois
+        </p>
+
+        <h1 class="text-5xl font-extrabold leading-tight tracking-tight md:text-6xl">
+          N&W Family Farm
+        </h1>
+
+        <p class="mt-6 max-w-xl text-lg text-green-100 md:text-xl">
+          Rooted in tradition and built with care, N&W Family Farm is dedicated to growing quality products and serving our community with honesty, hard work, and family values.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#about" class="rounded-2xl bg-white px-6 py-3 font-semibold text-green-900 shadow-lg transition hover:scale-105">
+            Learn More
+          </a>
+
+          <a href="#contact" class="rounded-2xl border border-white/40 bg-white/10 px-6 py-3 font-semibold backdrop-blur-sm transition hover:bg-white/20">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="mx-auto max-w-7xl px-6 py-20 lg:px-12">
+    <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+      <div>
+        <h2 class="text-4xl font-bold text-green-900">
+          About Our Farm
+        </h2>
+
+        <p class="mt-6 text-lg leading-relaxed text-stone-700">
+          N&W Family Farm was founded on the belief that great farming starts with strong family values.
+        </p>
+
+        <p class="mt-4 text-lg leading-relaxed text-stone-700">
+          Whether you're looking for fresh produce, farm goods, or simply want to support local agriculture, we're grateful to have you as part of our story.
+        </p>
+      </div>
+
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="rounded-3xl bg-white p-6 shadow-lg">
+          <div class="mb-4 text-4xl">🌱</div>
+          <h3 class="text-xl font-semibold text-green-900">Sustainable Practices</h3>
+          <p class="mt-2 text-stone-600">
+            Focused on responsible farming and long-term stewardship of the land.
+          </p>
+        </div>
+
+        <div class="rounded-3xl bg-white p-6 shadow-lg">
+          <div class="mb-4 text-4xl">🏡</div>
+          <h3 class="text-xl font-semibold text-green-900">Family Tradition</h3>
+          <p class="mt-2 text-stone-600">
+            Built on generations of hard work, dedication, and community values.
+          </p>
+        </div>
+
+        <div class="rounded-3xl bg-white p-6 shadow-lg">
+          <div class="mb-4 text-4xl">🌾</div>
+          <h3 class="text-xl font-semibold text-green-900">Quality Products</h3>
+          <p class="mt-2 text-stone-600">
+            Delivering fresh, dependable products with care and attention to detail.
+          </p>
+        </div>
+
+        <div class="rounded-3xl bg-white p-6 shadow-lg">
+          <div class="mb-4 text-4xl">🤝</div>
+          <h3 class="text-xl font-semibold text-green-900">Community Focused</h3>
+          <p class="mt-2 text-stone-600">
+            Proud to support local families, businesses, and agricultural traditions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-green-900 text-white">
+    <div class="mx-auto max-w-5xl px-6 py-20 text-center">
+      <h2 class="text-4xl font-bold">
+        Growing Together, One Season at a Time
+      </h2>
+
+      <p class="mx-auto mt-6 max-w-2xl text-lg text-green-100">
+        Thank you for supporting local farming and family-owned agriculture.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="mx-auto max-w-7xl px-6 py-20 lg:px-12">
+    <div class="rounded-3xl bg-white p-10 shadow-xl">
+      <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div>
+          <h2 class="text-4xl font-bold text-green-900">Contact Us</h2>
+
+          <div class="mt-8 space-y-4 text-lg">
+            <p>📍 Lake County, Illinois</p>
+            <p>📧 amy@nw.farm</p>
+            <p>📞 888.888.8888</p>
+          </div>
+        </div>
+
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name"
+            class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none" />
+
+          <input type="email" placeholder="Your Email"
+            class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none" />
+
+          <textarea rows="5" placeholder="Your Message"
+            class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none"></textarea>
+
+          <button type="submit"
+            class="rounded-2xl bg-green-900 px-6 py-3 font-semibold text-white">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-stone-200 bg-stone-100 py-8 text-center text-sm text-stone-600">
+    <p>© 2026 N&W Family Farm. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
