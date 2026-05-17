@@ -3,141 +3,296 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>N&W Family Farm</title>
+  <title>N&W Family Farm LLC – Lake County, Illinois</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    html { scroll-behavior: smooth; }
+    .hero-bg {
+      background-image: linear-gradient(to bottom right, rgba(20,60,20,0.85), rgba(100,60,10,0.75)),
+        url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1920&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
 </head>
-<body class="min-h-screen bg-stone-50 text-stone-800">
+<body class="bg-stone-50 text-stone-800">
 
-  <section class="relative overflow-hidden bg-gradient-to-br from-green-900 via-green-800 to-amber-700 text-white">
-    <div class="absolute inset-0 opacity-10 bg-cover bg-center"
-      style="background-image:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1600&auto=format&fit=crop')">
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
+    <div class="mx-auto max-w-7xl px-6 lg:px-12 flex items-center justify-between h-16">
+      <a href="#" class="flex items-center gap-2">
+        <span class="text-2xl">🌾</span>
+        <span class="font-bold text-green-900 text-lg" style="font-family:'Playfair Display',serif">N&W Family Farm</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600">
+        <a href="#about" class="hover:text-green-800 transition">About</a>
+        <a href="#products" class="hover:text-green-800 transition">Products</a>
+        <a href="#values" class="hover:text-green-800 transition">Our Values</a>
+        <a href="#contact" class="hover:text-green-800 transition">Contact</a>
+        <a href="#contact" class="rounded-full bg-green-900 text-white px-5 py-2 hover:bg-green-800 transition">Get in Touch</a>
+      </div>
     </div>
+  </nav>
 
-    <div class="relative mx-auto max-w-7xl px-6 py-24 lg:flex lg:items-center lg:justify-between lg:px-12">
-      <div class="max-w-2xl">
-        <p class="mb-4 inline-block rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm tracking-wide backdrop-blur-sm">
-          Family Owned • Locally Grown • Lake County, Illinois
-        </p>
-
-        <h1 class="text-5xl font-extrabold leading-tight tracking-tight md:text-6xl">
-          N&W Family Farm
+  <!-- Hero -->
+  <section class="hero-bg min-h-screen flex items-center pt-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-12 py-32">
+      <div class="max-w-3xl">
+        <span class="inline-block mb-6 rounded-full border border-white/30 bg-white/10 px-5 py-1.5 text-sm text-white tracking-widest uppercase backdrop-blur-sm">
+          Family Owned · Lake County, Illinois
+        </span>
+        <h1 class="text-6xl md:text-7xl font-extrabold text-white leading-none tracking-tight">
+          N&W<br/>Family Farm
         </h1>
-
-        <p class="mt-6 max-w-xl text-lg text-green-100 md:text-xl">
-          Rooted in tradition and built with care, N&W Family Farm is dedicated to growing quality products and serving our community with honesty, hard work, and family values.
+        <p class="mt-6 text-xl text-green-100 max-w-xl leading-relaxed">
+          Rooted in tradition, grown with care. We cultivate quality products and lasting relationships right here in Lake County.
         </p>
-
-        <div class="mt-8 flex flex-wrap gap-4">
-          <a href="#about" class="rounded-2xl bg-white px-6 py-3 font-semibold text-green-900 shadow-lg transition hover:scale-105">
-            Learn More
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="#products" class="rounded-full bg-amber-500 hover:bg-amber-400 text-white font-semibold px-8 py-3.5 shadow-lg transition hover:scale-105">
+            See What We Grow
           </a>
-
-          <a href="#contact" class="rounded-2xl border border-white/40 bg-white/10 px-6 py-3 font-semibold backdrop-blur-sm transition hover:bg-white/20">
-            Contact Us
+          <a href="#about" class="rounded-full border border-white/40 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3.5 backdrop-blur-sm transition">
+            Our Story
           </a>
         </div>
       </div>
     </div>
-  </section>
 
-  <section id="about" class="mx-auto max-w-7xl px-6 py-20 lg:px-12">
-    <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
-      <div>
-        <h2 class="text-4xl font-bold text-green-900">
-          About Our Farm
-        </h2>
-
-        <p class="mt-6 text-lg leading-relaxed text-stone-700">
-          N&W Family Farm was founded on the belief that great farming starts with strong family values.
-        </p>
-
-        <p class="mt-4 text-lg leading-relaxed text-stone-700">
-          Whether you're looking for fresh produce, farm goods, or simply want to support local agriculture, we're grateful to have you as part of our story.
-        </p>
-      </div>
-
-      <div class="grid gap-6 sm:grid-cols-2">
-        <div class="rounded-3xl bg-white p-6 shadow-lg">
-          <div class="mb-4 text-4xl">🌱</div>
-          <h3 class="text-xl font-semibold text-green-900">Sustainable Practices</h3>
-          <p class="mt-2 text-stone-600">
-            Focused on responsible farming and long-term stewardship of the land.
-          </p>
-        </div>
-
-        <div class="rounded-3xl bg-white p-6 shadow-lg">
-          <div class="mb-4 text-4xl">🏡</div>
-          <h3 class="text-xl font-semibold text-green-900">Family Tradition</h3>
-          <p class="mt-2 text-stone-600">
-            Built on generations of hard work, dedication, and community values.
-          </p>
-        </div>
-
-        <div class="rounded-3xl bg-white p-6 shadow-lg">
-          <div class="mb-4 text-4xl">🌾</div>
-          <h3 class="text-xl font-semibold text-green-900">Quality Products</h3>
-          <p class="mt-2 text-stone-600">
-            Delivering fresh, dependable products with care and attention to detail.
-          </p>
-        </div>
-
-        <div class="rounded-3xl bg-white p-6 shadow-lg">
-          <div class="mb-4 text-4xl">🤝</div>
-          <h3 class="text-xl font-semibold text-green-900">Community Focused</h3>
-          <p class="mt-2 text-stone-600">
-            Proud to support local families, businesses, and agricultural traditions.
-          </p>
-        </div>
-      </div>
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 text-xs tracking-widest uppercase">
+      <span>Scroll</span>
+      <div class="w-px h-10 bg-white/30 animate-pulse"></div>
     </div>
   </section>
 
+  <!-- Stats bar -->
   <section class="bg-green-900 text-white">
-    <div class="mx-auto max-w-5xl px-6 py-20 text-center">
-      <h2 class="text-4xl font-bold">
-        Growing Together, One Season at a Time
-      </h2>
-
-      <p class="mx-auto mt-6 max-w-2xl text-lg text-green-100">
-        Thank you for supporting local farming and family-owned agriculture.
-      </p>
+    <div class="mx-auto max-w-7xl px-6 lg:px-12 py-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <p class="text-4xl font-bold text-amber-400" style="font-family:'Playfair Display',serif">100%</p>
+        <p class="mt-1 text-sm text-green-200 uppercase tracking-wide">Locally Grown</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold text-amber-400" style="font-family:'Playfair Display',serif">4</p>
+        <p class="mt-1 text-sm text-green-200 uppercase tracking-wide">Seasons of Harvest</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold text-amber-400" style="font-family:'Playfair Display',serif">LLC</p>
+        <p class="mt-1 text-sm text-green-200 uppercase tracking-wide">Licensed & Insured</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold text-amber-400" style="font-family:'Playfair Display',serif">IL</p>
+        <p class="mt-1 text-sm text-green-200 uppercase tracking-wide">Lake County Based</p>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="mx-auto max-w-7xl px-6 py-20 lg:px-12">
-    <div class="rounded-3xl bg-white p-10 shadow-xl">
-      <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
-        <div>
-          <h2 class="text-4xl font-bold text-green-900">Contact Us</h2>
+  <!-- About -->
+  <section id="about" class="mx-auto max-w-7xl px-6 lg:px-12 py-28">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="text-amber-600 font-semibold uppercase tracking-widest text-sm mb-4">Our Story</p>
+        <h2 class="text-5xl font-bold text-green-900 leading-tight">A Farm Built on<br/>Family Values</h2>
+        <p class="mt-6 text-lg text-stone-600 leading-relaxed">
+          N&W Family Farm LLC was founded with a simple belief: the best things come from the land when they're grown with patience, honesty, and heart.
+        </p>
+        <p class="mt-4 text-lg text-stone-600 leading-relaxed">
+          Nestled in Lake County, Illinois, our farm is a place where seasons guide our work and community drives our purpose. Every product we offer is a reflection of that commitment.
+        </p>
+        <div class="mt-8 flex items-center gap-4">
+          <div class="h-px flex-1 bg-stone-200"></div>
+          <p class="text-stone-400 text-sm italic">N&W Family Farm LLC</p>
+          <div class="h-px flex-1 bg-stone-200"></div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=800&auto=format&fit=crop"
+          class="rounded-3xl object-cover h-64 w-full shadow-lg" alt="Farm field" />
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=800&auto=format&fit=crop"
+          class="rounded-3xl object-cover h-64 w-full shadow-lg mt-8" alt="Fresh produce" />
+        <img src="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4e3?q=80&w=800&auto=format&fit=crop"
+          class="rounded-3xl object-cover h-64 w-full shadow-lg" alt="Farm barn" />
+        <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?q=80&w=800&auto=format&fit=crop"
+          class="rounded-3xl object-cover h-64 w-full shadow-lg mt-8" alt="Harvest" />
+      </div>
+    </div>
+  </section>
 
-          <div class="mt-8 space-y-4 text-lg">
-            <p>📍 Lake County, Illinois</p>
-            <p>📧 amy@nw.farm</p>
-            <p>📞 888.888.8888</p>
+  <!-- Products -->
+  <section id="products" class="bg-stone-100 py-28">
+    <div class="mx-auto max-w-7xl px-6 lg:px-12">
+      <div class="text-center mb-16">
+        <p class="text-amber-600 font-semibold uppercase tracking-widest text-sm mb-4">What We Offer</p>
+        <h2 class="text-5xl font-bold text-green-900">Fresh From Our Farm</h2>
+        <p class="mt-4 text-lg text-stone-500 max-w-xl mx-auto">Grown with care, harvested with pride, and brought straight to your community.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition group">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?q=80&w=800&auto=format&fit=crop"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Fresh Produce" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-green-900">Fresh Produce</h3>
+            <p class="mt-2 text-stone-500">Seasonal vegetables and fruits grown naturally, picked at peak freshness.</p>
           </div>
         </div>
-
-        <form class="space-y-4">
-          <input type="text" placeholder="Your Name"
-            class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none" />
-
-          <input type="email" placeholder="Your Email"
-            class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none" />
-
-          <textarea rows="5" placeholder="Your Message"
-            class="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none"></textarea>
-
-          <button type="submit"
-            class="rounded-2xl bg-green-900 px-6 py-3 font-semibold text-white">
-            Send Message
-          </button>
-        </form>
+        <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition group">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1498579150354-977475b7ea0b?q=80&w=800&auto=format&fit=crop"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Farm Goods" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-green-900">Farm Goods</h3>
+            <p class="mt-2 text-stone-500">Homegrown products crafted from what our land offers each season.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition group">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=800&auto=format&fit=crop"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Local Delivery" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-green-900">Local Pickup & Delivery</h3>
+            <p class="mt-2 text-stone-500">Convenient options to get our farm's best straight to your door in Lake County.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="border-t border-stone-200 bg-stone-100 py-8 text-center text-sm text-stone-600">
-    <p>© 2026 N&W Family Farm. All rights reserved.</p>
+  <!-- Values -->
+  <section id="values" class="mx-auto max-w-7xl px-6 lg:px-12 py-28">
+    <div class="text-center mb-16">
+      <p class="text-amber-600 font-semibold uppercase tracking-widest text-sm mb-4">Why Choose Us</p>
+      <h2 class="text-5xl font-bold text-green-900">The N&W Difference</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="rounded-3xl bg-green-50 border border-green-100 p-8 text-center hover:shadow-lg transition">
+        <div class="text-5xl mb-4">🌱</div>
+        <h3 class="text-lg font-bold text-green-900">Sustainable Farming</h3>
+        <p class="mt-2 text-stone-500 text-sm">Responsible practices that respect the land for future generations.</p>
+      </div>
+      <div class="rounded-3xl bg-amber-50 border border-amber-100 p-8 text-center hover:shadow-lg transition">
+        <div class="text-5xl mb-4">🏡</div>
+        <h3 class="text-lg font-bold text-green-900">Family Tradition</h3>
+        <p class="mt-2 text-stone-500 text-sm">Built on generations of dedication, hard work, and community love.</p>
+      </div>
+      <div class="rounded-3xl bg-green-50 border border-green-100 p-8 text-center hover:shadow-lg transition">
+        <div class="text-5xl mb-4">🌾</div>
+        <h3 class="text-lg font-bold text-green-900">Quality You Can Taste</h3>
+        <p class="mt-2 text-stone-500 text-sm">Every product meets our high standards before it leaves the farm.</p>
+      </div>
+      <div class="rounded-3xl bg-amber-50 border border-amber-100 p-8 text-center hover:shadow-lg transition">
+        <div class="text-5xl mb-4">🤝</div>
+        <h3 class="text-lg font-bold text-green-900">Community First</h3>
+        <p class="mt-2 text-stone-500 text-sm">Proud to support local families and strengthen our agricultural roots.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="mx-6 lg:mx-auto max-w-6xl mb-20 rounded-3xl overflow-hidden relative">
+    <div class="absolute inset-0 bg-cover bg-center"
+      style="background-image:url('https://images.unsplash.com/photo-1500651230702-0e2d8a49d4e3?q=80&w=1600&auto=format&fit=crop')"></div>
+    <div class="absolute inset-0 bg-green-900/80"></div>
+    <div class="relative px-10 py-20 text-center text-white">
+      <h2 class="text-4xl md:text-5xl font-bold">Growing Together,<br/>One Season at a Time</h2>
+      <p class="mt-4 text-green-200 text-lg max-w-xl mx-auto">
+        Join our community of neighbors who choose fresh, local, and family-grown.
+      </p>
+      <a href="#contact" class="mt-8 inline-block rounded-full bg-amber-500 hover:bg-amber-400 text-white font-semibold px-10 py-4 shadow-lg transition hover:scale-105">
+        Reach Out Today
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="mx-auto max-w-7xl px-6 lg:px-12 py-28">
+    <div class="grid lg:grid-cols-2 gap-16 items-start">
+      <div>
+        <p class="text-amber-600 font-semibold uppercase tracking-widest text-sm mb-4">Get In Touch</p>
+        <h2 class="text-5xl font-bold text-green-900">We'd Love to<br/>Hear From You</h2>
+        <p class="mt-6 text-lg text-stone-500 leading-relaxed">
+          Whether you have a question about our products, want to place an order, or just want to say hello — we're always happy to connect.
+        </p>
+        <div class="mt-10 space-y-5">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-green-100 flex items-center justify-center text-xl">📍</div>
+            <div>
+              <p class="font-semibold text-stone-700">Location</p>
+              <p class="text-stone-500">Lake County, Illinois</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-green-100 flex items-center justify-center text-xl">📧</div>
+            <div>
+              <p class="font-semibold text-stone-700">Email</p>
+              <a href="mailto:amy@nw.farm" class="text-green-700 hover:underline">amy@nw.farm</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-green-100 flex items-center justify-center text-xl">📞</div>
+            <div>
+              <p class="font-semibold text-stone-700">Phone</p>
+              <a href="tel:8888888888" class="text-green-700 hover:underline">888.888.8888</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="bg-white rounded-3xl shadow-xl p-10 space-y-5">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-sm font-medium text-stone-600 mb-1.5">First Name</label>
+            <input type="text" placeholder="Amy"
+              class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none focus:border-green-400 focus:ring-2 focus:ring-green-100 transition" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-stone-600 mb-1.5">Last Name</label>
+            <input type="text" placeholder="Smith"
+              class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none focus:border-green-400 focus:ring-2 focus:ring-green-100 transition" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-stone-600 mb-1.5">Email</label>
+          <input type="email" placeholder="you@example.com"
+            class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none focus:border-green-400 focus:ring-2 focus:ring-green-100 transition" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-stone-600 mb-1.5">Message</label>
+          <textarea rows="5" placeholder="What's on your mind?"
+            class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none focus:border-green-400 focus:ring-2 focus:ring-green-100 transition resize-none"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full rounded-2xl bg-green-900 hover:bg-green-800 text-white font-semibold py-4 shadow-md transition hover:scale-[1.02]">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-950 text-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-12 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <span class="text-3xl">🌾</span>
+        <div>
+          <p class="font-bold text-lg" style="font-family:'Playfair Display',serif">N&W Family Farm LLC</p>
+          <p class="text-green-400 text-sm">Lake County, Illinois</p>
+        </div>
+      </div>
+      <div class="flex gap-8 text-sm text-green-300">
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#products" class="hover:text-white transition">Products</a>
+        <a href="#values" class="hover:text-white transition">Values</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </div>
+      <p class="text-green-500 text-sm">© 2026 N&W Family Farm LLC. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
